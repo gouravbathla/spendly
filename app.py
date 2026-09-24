@@ -135,6 +135,11 @@ def privacy():
     return render_template("privacy.html")
 
 
+@app.route("/info")
+def info():
+    return render_template("info.html")
+
+
 @app.route("/logout")
 def logout():
     session.clear()
